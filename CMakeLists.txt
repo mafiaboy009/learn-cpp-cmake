@@ -1,0 +1,26 @@
+cmake_minimum_required( VERSION 3.16 FATAL_ERROR )
+
+project( learn-cpp-cmake )
+
+set (CMAKE_CXX_STANDARD 20 )
+set (CMAKE_CXX_STANDARD_REQUIRED ON)
+set (CMAKE_CXX_EXTENSIONS OFF)
+
+#add_subdirectory( algorithm)
+#add_subdirectory( class    )
+#add_subdirectory( design-patterns    )
+#add_subdirectory( interview-questions)
+#add_subdirectory( memory   )
+#add_subdirectory( stl      )
+#add_subdirectory( storage  )
+#add_subdirectory( templates          )
+add_subdirectory( thread   )
+#add_subdirectory( unit-test          )
+#add_subdirectory( utility  )
+#add_subdirectory( )
+
+
+
+
+
+
