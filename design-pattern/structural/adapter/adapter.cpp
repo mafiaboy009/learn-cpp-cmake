@@ -43,7 +43,8 @@ int main() {  // Client code
 	CatFemale* catFemale = new CatFemale;
 	DogNature dogNature;
 	//	dogNature.carryOutNature (catFemale);  // Will not compile of course since the parameter must be of type Dog*.
-	ConversionAdapter* adaptedCat = new ConversionAdapter(catFemale);  // catFemale has adapted to become a Dog!
+	Dog* adaptedCat = new ConversionAdapter(catFemale);  // catFemale has adapted to become a Dog!
+	//ConversionAdapter* adaptedCat = new ConversionAdapter(catFemale);  // catFemale has adapted to become a Dog!
 
 	dogNature.carryOutNature(dogFemale);
 	dogNature.carryOutNature(adaptedCat);  // So now catFemale, in the form of adaptedCat, participates in the dogNature!
