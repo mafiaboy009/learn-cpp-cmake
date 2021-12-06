@@ -8,7 +8,7 @@ set (CMAKE_CXX_EXTENSIONS OFF)
 
 #add_subdirectory( algorithm)
 #add_subdirectory( class    )
-#add_subdirectory( design-patterns    )
+add_subdirectory( design-pattern    )
 #add_subdirectory( interview-questions)
 #add_subdirectory( memory   )
 add_subdirectory( stl      )
