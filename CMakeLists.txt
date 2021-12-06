@@ -15,12 +15,6 @@ add_subdirectory( stl      )
 #add_subdirectory( storage  )
 #add_subdirectory( templates          )
 add_subdirectory( thread   )
-#add_subdirectory( unit-test          )
+add_subdirectory( unit-test          )
 #add_subdirectory( utility  )
 #add_subdirectory( )
-
-
-
-
-
-

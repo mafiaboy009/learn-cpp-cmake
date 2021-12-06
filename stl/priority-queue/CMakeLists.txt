@@ -14,4 +14,3 @@ add_executable( stlPriorityQueue
 
 #target_include_directories( stlPriorityQueue PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/.. )
 #target_link_libraries( stlPriorityQueue PRIVATE Threads::Threads )
-
