@@ -1,4 +1,4 @@
-project( learn-cpp-desgin-pattern-structural-bridge )
+project( learn-cpp-desgin-pattern-structural-composite )
 
 set(
     src
