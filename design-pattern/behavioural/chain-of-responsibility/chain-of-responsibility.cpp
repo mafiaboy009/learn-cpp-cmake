@@ -53,7 +53,6 @@ int main () {
     h2->setNextHandler(h3);
 
     h1->request(18);
-
     h1->request(40);
 
     delete h1;

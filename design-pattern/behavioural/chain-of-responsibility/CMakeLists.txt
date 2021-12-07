@@ -1,4 +1,4 @@
-project( learn-cpp-desgin-pattern-creational-builder )
+project( learn-cpp-desgin-pattern-behavioural-chain-of-responsibility )
 
 set(
     src
