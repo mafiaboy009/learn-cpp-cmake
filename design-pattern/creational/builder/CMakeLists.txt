@@ -1,6 +1,5 @@
 project( learn-cpp-desgin-pattern-creational-builder )
 
-#[[
 set(
     src
     builder.cpp
@@ -8,6 +7,7 @@ set(
 
 set(
     header
+    builder.hpp
     )
 
 add_executable(
@@ -15,4 +15,3 @@ add_executable(
     ${src}
     ${header}
     )
-]]
