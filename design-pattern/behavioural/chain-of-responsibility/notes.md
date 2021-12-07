@@ -1,0 +1,1 @@
+Chain of Responsibility pattern has the intent to avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chains the receiving objects and passes the requests along the chain until an object handles it.

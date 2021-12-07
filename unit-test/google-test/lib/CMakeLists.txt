@@ -14,7 +14,7 @@ add_library(
     ${header}
     )
 
-add_executable( clientToLib
+add_executable( unitTestGoogleClientToLib
     main.cpp
     ${src}
     ${header}

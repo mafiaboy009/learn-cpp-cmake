@@ -12,6 +12,7 @@ set(
 
 set(
     header
+    decorator2.hpp
     )
 
 add_executable(
