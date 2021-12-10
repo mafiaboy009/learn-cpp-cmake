@@ -59,3 +59,15 @@ General guideline:
 if a conversion from type A to type B is implemented, then
 avoid writing a conversion from type B to type A
 */
+
+/*
+******************************************************
+Category D: Explicit Type Conversion are called Casting
+
+Four types
+- static_cast - related type
+- dynamic_cast - related type
+- const_cast - same type
+- reinterpret_cast -any type
+
+NOTE: avoid using C-stype casting; USE C++-style casting only
