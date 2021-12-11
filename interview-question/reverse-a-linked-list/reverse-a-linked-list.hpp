@@ -45,7 +45,7 @@ struct LinkedList{
     ~LinkedList(){
         Node *nodePtr = head;
         while( nodePtr ){
-            cout << "destructing node " << nodePtr->data << '\n';
+            //cout << "destructing node " << nodePtr->data << '\n';
             Node* tempNodePtr = nodePtr->next;
             delete nodePtr;
             nodePtr = tempNodePtr;

@@ -24,10 +24,13 @@ int main(){
     linkedList.push(8);
     linkedList.push(5);
     linkedList.push(10);
-
     linkedList.display();
 
     linkedList.reverse();
-
     linkedList.display();
+
+    linkedList.reverse();
+    linkedList.display();
+
+    return 0;
 }
