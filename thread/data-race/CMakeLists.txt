@@ -1,4 +1,4 @@
-project( learn-cpp-thread-basic )
+project( learn-cpp-thread-data-race )
 
 set( src 
     data-race.cpp
