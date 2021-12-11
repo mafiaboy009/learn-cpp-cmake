@@ -1,4 +1,4 @@
-project( learn-cpp-thread-basic )
+project( learn-cpp-thread-dead-lock )
 
 set( src 
     dead-lock.cpp

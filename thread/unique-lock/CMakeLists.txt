@@ -1,4 +1,4 @@
-project( learn-cpp-thread-basic )
+project( learn-cpp-thread-unique-lock )
 
 set( src 
     unique-lock.cpp

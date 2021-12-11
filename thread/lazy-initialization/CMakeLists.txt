@@ -1,4 +1,4 @@
-project( learn-cpp-thread-basic )
+project( learn-cpp-thread-lazy-initialization )
 
 set( src 
     lazy-initialization.cpp
