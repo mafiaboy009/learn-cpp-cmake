@@ -5,7 +5,7 @@ set( src
     )
 
 set( header
-    ${CMAKE_CURRENT_SOURCE_DIR}/../thread.hpp 
+    basic.hpp
     )
 
 add_executable( threadBasic
