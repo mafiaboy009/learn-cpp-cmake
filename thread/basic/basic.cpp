@@ -1,10 +1,14 @@
-#include "thread.hpp"
+/*
+ * Oversubscription - number of threads by app is greater than total number of threads supported by CPU
+ *
+ */
+
+#include "basic.hpp"
 
 int main(){
 
-    //Oversubscription - number of threads by app is greater than total number of threads supported by CPU
-    cout << "MAX# threads: "<< thread::hardware_concurrency() << '\n'; //indicates the max# threads 
-
+    //indicates the max# threads 
+    cout << "MAX# threads: "<< thread::hardware_concurrency() << '\n'; 
     cout << "main thread id: " << this_thread::get_id() << "\n";
 
     thread t7(function_1); // t7 starts running
@@ -17,7 +21,7 @@ int main(){
     if( t7.joinable() ){
         t7.join(); // main thread waits for t1 to finish
     }
-    
+
     thread t1(function_1); // t1 starts running
     try{
         for(int i=0; i<3; i++){
@@ -32,7 +36,7 @@ int main(){
     t1.join(); // main thread waits for t1 to finish -- use join in a try-catch block
 
 
-   Functor1 ftor;
+    Functor1 ftor;
     // try - catch has a better alternative using RAII - Wrapper w(t1) -- w's destructor should have t1.join
     thread t2(ftor); // t2 starts running
     cout << "t2 thread id: " << t2.get_id() << "\n";
