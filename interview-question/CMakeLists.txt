@@ -1,6 +1,7 @@
 project( learn-cpp-interview-question )
 
 add_subdirectory( bubble-sort )
+add_subdirectory( chocolate-wrapper-recycle )
 add_subdirectory( count-numbers-less-than-a-particular-number )
 add_subdirectory( map-with-user-defined-key )
 add_subdirectory( print-next-greatest-integer )
