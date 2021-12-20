@@ -29,5 +29,6 @@ int main(){
         }
         ++i;
     }
+    cout << '\n';
     return 0;
 }

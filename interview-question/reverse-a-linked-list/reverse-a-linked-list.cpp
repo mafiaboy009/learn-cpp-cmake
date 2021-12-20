@@ -2,16 +2,23 @@
 
 void LinkedList::reverse(){
     Node *nodePtr = head;
-    Node *nextNodePtr = nodePtr->next;
-
+    Node *nextNodePtr = nullptr;
+    if( head ){
+        if( head->next ){
+            nextNodePtr = nodePtr->next;
+        }
+    }
     while( nextNodePtr ){
         Node *tempNodePtr = nextNodePtr->next;
         nextNodePtr->next = nodePtr;
         nodePtr = nextNodePtr;
         nextNodePtr = tempNodePtr;
     }
-
-    head->next = nullptr;
+    if( head ){
+        if( head->next ){
+            head->next = nullptr;
+        }
+    }
     head = nodePtr;
 }
 
@@ -31,6 +38,10 @@ int main(){
 
     linkedList.reverse();
     linkedList.display();
+
+    LinkedList linkedList1;
+    linkedList1.reverse();
+    linkedList1.display();
 
     return 0;
 }
