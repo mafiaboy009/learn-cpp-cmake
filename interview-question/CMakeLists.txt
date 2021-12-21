@@ -9,5 +9,6 @@ add_subdirectory( print-next-greatest-integer )
 add_subdirectory( reverse-a-linked-list )
 add_subdirectory( reverse-words-in-a-sentence )
 add_subdirectory( sort-array-of-2-different-numbers )
+add_subdirectory( shift-right )
 add_subdirectory( sum-without-plus )
 
