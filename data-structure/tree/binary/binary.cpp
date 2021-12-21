@@ -1,7 +1,7 @@
 #include "binary.hpp"
 
 int main(){
-    BinarySearchTree bst;
+    BinaryTree bst;
     bst.inOrderDisplay( &bst.root );
     cout << endl;
     bst.insert( 2, &bst.root );
