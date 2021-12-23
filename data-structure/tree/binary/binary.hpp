@@ -25,10 +25,10 @@ struct Node{
     }
 };
 
-struct BinarySearchTree{
+struct BinaryTree{
     Node *root{};
 
-    BinarySearchTree():root{nullptr}{}
+    BinaryTree():root{nullptr}{}
 
     void insert( int data, Node **root1 ){
         if( *root1 == nullptr ){
@@ -101,7 +101,7 @@ struct BinarySearchTree{
         delete (*root1);
     }
 
-    ~BinarySearchTree( ){
+    ~BinaryTree( ){
         purgeNodes( &root );
     }
 };
