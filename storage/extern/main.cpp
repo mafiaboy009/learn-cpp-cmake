@@ -2,7 +2,7 @@
 
 using namespace std;
 
-extern const char newLine;
+extern const char newLine; // handled during linking?
 int i = 42;
 
 int main(){
