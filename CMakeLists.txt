@@ -25,7 +25,7 @@ SET (CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O2 -g")
 
 
 add_subdirectory( algorithm )
-#add_subdirectory( class    )
+add_subdirectory( class )
 add_subdirectory( cast )
 add_subdirectory( data-structure )
 add_subdirectory( design-pattern )
