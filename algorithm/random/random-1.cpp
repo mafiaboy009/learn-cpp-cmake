@@ -2,6 +2,10 @@
 
 #include <random>
 
+/*
+ * https://zhang-xiao-mu.blog/2019/11/02/random-engine-in-modern-c/
+ */
+
 int main(){
 
 	std::random_device seed{};
