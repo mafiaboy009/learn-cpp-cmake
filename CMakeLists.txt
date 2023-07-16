@@ -10,6 +10,8 @@ set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra")
 set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set (CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set (CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set (CMAKE_OBJECT_PATH_MAX 500)
+set (CMAKE_VERBOSE_MAKEFILE OFF)
 
 
 #[[
@@ -39,6 +41,7 @@ add_subdirectory( memory )
 add_subdirectory( namespace )
 add_subdirectory( oop )
 add_subdirectory( qualifier )
+add_subdirectory( regex )
 add_subdirectory( stream )
 add_subdirectory( stl )
 add_subdirectory( storage  )
