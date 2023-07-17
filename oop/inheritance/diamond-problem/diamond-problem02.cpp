@@ -7,30 +7,35 @@ class A
 
     public:
 
-    A():x{4}{}
+    A():x{4}{ cout << "A ctor" << endl; }
 
-    A(int i){ 
-        x = i; 
-    }
+    A(int i):x{i}{}
 
     void print() { 
         cout << x << '\n'; 
     }
+
+    ~A(){ cout << "A dtor" << endl; }
 };
 
 class B: virtual public A
 {
     public:
-        B():A(10) { } // default constructor of A called
+        B():A(10) { cout << "B ctor" << endl; } // default constructor of A called
+        ~B(){ cout << "B dtor" << endl; }
 };
 
 class C: virtual public A
 {
     public:
-        C():A(11) { } // default constructor of A called
+        C():A(11) { cout << "C ctor" << endl; } // default constructor of A called
+        ~C(){ cout << "C dtor" << endl; }
 };
 
 class D: public B, public C {
+    public:
+    D(){ cout << "D ctor" << endl; }
+    ~D(){ cout << "D dtor" << endl; }
 };
 
 int main()
