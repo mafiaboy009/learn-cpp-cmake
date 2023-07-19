@@ -18,6 +18,7 @@ class yellowdog: public dog {
     // if the function uses a data member then segmentation
     // fault will happen
     void bark(){
-        cout << " yellow woof !\n";
+        cout << " yellow woof !\n" << endl;
+        //cout << " yellow woof !\n" << age << endl;
     }
 };

@@ -3,3 +3,6 @@
 **/lib*
 .*.swp
 *.out
+/Default/
+*.exe
+**/workspace/*

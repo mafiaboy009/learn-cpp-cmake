@@ -1,8 +1,8 @@
-project( learn-cpp-idiom-address-of )
+project( learn-cpp-idiom-algebraic-hierarchy )
 
 set(
     src
-    address-of.cpp
+    algebraic-hierarchy.cpp
     )
 
 set(
@@ -10,7 +10,7 @@ set(
     )
 
 add_executable(
-    idiomAddressOf
+    idiomAlgebraicHierarchy
     ${src}
     ${header}
     )
