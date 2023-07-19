@@ -1,4 +1,4 @@
-project( learn-cpp-class-string )
+project( learn-cpp-oop-class-string )
 
 set( src 
 	stringClass.cpp

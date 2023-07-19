@@ -1,3 +1,3 @@
-project( learn-cpp-class )
+project( learn-cpp-oop-class )
 
 add_subdirectory( stringClass )
