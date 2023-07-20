@@ -13,6 +13,10 @@ int main(){
         a = 10;
         b = 'd';
         d = "expression";
+        cout << "lamdba says: after modification" << newLine;
+        cout << "int " << a << newLine;
+        cout << "char " << b << newLine;
+        cout << "string " << d << newLine;
     };
 
     function();
