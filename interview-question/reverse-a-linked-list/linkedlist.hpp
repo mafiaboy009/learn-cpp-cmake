@@ -21,6 +21,7 @@ public:
     void removeDuplicates(T inData);
     void reverse();
     void print();
+    void clear();
 };
 
 #include "linkedlist.cpp"

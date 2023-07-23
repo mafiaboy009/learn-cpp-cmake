@@ -162,3 +162,24 @@ void linkedList<T>::removeDuplicates(T inData)
         remove(index[i]);
     }
 }
+
+template <class T>
+void linkedList<T>::clear()
+{
+    if( _head )
+    {
+        node<T>* currNode = _head;
+        node<T>* nextNode = _head->getNextNode();
+        while(nextNode)
+        {
+            delete currNode;
+            --_length;
+            currNode = nextNode;
+            nextNode = nextNode->getNextNode();
+        }
+        delete currNode;
+        --_length;
+    }
+    _head = nullptr;
+    cout << "List is cleared !!\n";
+}
