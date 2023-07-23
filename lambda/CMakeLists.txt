@@ -21,6 +21,11 @@ set(
     )
 
 set(
+    src5
+    lambda-application-filter.cpp
+)
+
+set(
     header
     lambda.hpp
     )
@@ -48,3 +53,9 @@ add_executable(
     ${src4}
     ${header}
     )
+
+add_executable(
+    lambdaAppFilter1
+    ${src5}
+    ${header}
+)
