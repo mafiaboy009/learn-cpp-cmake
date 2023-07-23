@@ -15,7 +15,7 @@ class GlobalCoffeeConfig {
     GlobalCoffeeConfig& operator=(GlobalCoffeeConfig const&) = delete;
 
     // Provide a single, static method for retriving the singleton instance
-    static GlobalCoffeeConfig &get() {
+    static GlobalCoffeeConfig& get() {
         static GlobalCoffeeConfig config;
         return config;
     }
