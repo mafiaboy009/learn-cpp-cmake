@@ -22,6 +22,7 @@ public:
     void reverse();
     void print();
     void clear();
+    ~linkedList();
 };
 
 #include "linkedlist.cpp"

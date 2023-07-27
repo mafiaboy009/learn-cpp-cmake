@@ -10,6 +10,14 @@ int main()
     intLL.insert(3);
     intLL.insert(5);
     intLL.insert(7);
+    intLL.insert(7);
+    intLL.insert(7);
+    intLL.insert(7);
+    intLL.insert(7);
+    intLL.insert(7);
+    intLL.insert(7);
+    intLL.insert(7);
+    intLL.insert(7);
     intLL.insert(5);
     intLL.insert(9);
     intLL.insert(5);
@@ -28,7 +36,7 @@ int main()
     intLL.removeData(5);
     intLL.print();
 
-    linkedList<int> charLL;
+    linkedList<char> charLL;
     charLL.print();
     charLL.insert('a');
     charLL.insert('z');
@@ -42,6 +50,11 @@ int main()
     charLL.removeDuplicates('a');
     charLL.print();
     charLL.clear();
+    charLL.insert('y');
+    charLL.insert('y');
+    charLL.insert('y');
+    charLL.insert('y');
+    charLL.insert('y');
     charLL.print();
 
     return EXIT_SUCCESS;
