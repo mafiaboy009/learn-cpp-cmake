@@ -33,6 +33,18 @@ public:
 		return length * breadth;
 	}
 
+    bool operator()() const
+    {
+        if (length == breadth)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     bool operator() (const Rectangle& r) const {
         if( getLength() == r.getLength() )
         {
@@ -48,5 +60,11 @@ public:
         }
 
     }
+
+    ~Rectangle()
+    {
+        cout << "Rectangle dtor-ed\n\n";
+    }
+
 
 };
