@@ -5,8 +5,8 @@ using namespace std;
 template <typename T>
 void checkAnagram(linkedList<T>& word1, linkedList<T>& word2)
 {
-    int ar1[123]{};
-    int ar2[123]{};
+    int ar1[26]{};
+    int ar2[26]{};
     bool anagramBool = true;
 
     node<T> *tmp1 = word1.getHead();
