@@ -6,3 +6,7 @@
 /Default/
 *.exe
 **/workspace/*
+**/.vscode/**
+**/.settings/**
+**/.cproject
+**/.project
