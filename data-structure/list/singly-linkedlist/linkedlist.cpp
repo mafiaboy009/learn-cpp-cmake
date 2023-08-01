@@ -185,6 +185,12 @@ void linkedList<T>::clear()
 }
 
 template <class T>
+node<T>* linkedList<T>::getHead()
+{
+    return _head;
+}
+
+template <class T>
 linkedList<T>::~linkedList()
 {
     if( _head )

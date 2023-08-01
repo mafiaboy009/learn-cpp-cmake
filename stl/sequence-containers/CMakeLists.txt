@@ -1,16 +1,7 @@
-project( learn-cpp-stl )
+project( learn-cpp-stl-sequence-containers )
 
+add_subdirectory( deque )
+#add_subdirectory( forward-list )
+add_subdirectory( list )
 add_subdirectory( priority-queue )
-#add_subdirectory( )
-
-set( src
-    stl-notes.cpp
-    )
-
-set( header
-    )
-
-add_executable( stlNotes
-    ${src}
-    ${header}
-    )
+add_subdirectory( vector )
