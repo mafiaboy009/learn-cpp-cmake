@@ -17,4 +17,3 @@ void display(Head head, Tail... tail){
     cout << head << "\n";
     display(tail...);
 }
-

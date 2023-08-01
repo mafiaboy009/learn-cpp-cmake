@@ -1,5 +1,5 @@
 #pragma once
-#include "node.hpp"
+#include "node.cpp"
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -22,6 +22,8 @@ public:
     void reverse();
     void print();
     void clear();
+    node<T>* getHead();
+    ~linkedList();
 };
 
-#include "linkedlist.cpp"
+//#include "linkedlist.cpp"
