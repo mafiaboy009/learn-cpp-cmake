@@ -9,7 +9,7 @@ void checkAnagram(linkedList<T>& word1, linkedList<T>& word2)
     int ar2[26]{};
     bool anagramBool = true;
 
-    node<T> *tmp1 = word1.getHead();
+    singly_node<T> *tmp1 = word1.getHead();
     while (tmp1)
     {
         ++ar1[int(tmp1->getData())%26];
