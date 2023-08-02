@@ -12,5 +12,5 @@ after cloning
 cd learn-cpp-cmake
 mkdir build
 cd build
-cmake ..
-make
+cmake .. ( OR ) cmake -S .. -G "MinGW Makefiles"
+make ( OR ) mingw32-make.exe
