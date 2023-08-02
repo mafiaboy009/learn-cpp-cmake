@@ -1,7 +1,7 @@
 project( learn-cpp-data-structure-node-doublynode )
 
-set( src node.cpp )
+set( src doubly_node.cpp )
 
-set( header node.hpp )
+set( header doubly_node.hpp )
 
 add_library( doublynode SHARED ${header} ${src} )

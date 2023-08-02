@@ -5,8 +5,8 @@ void linkedList<T>::insert(T inData)
 {
     if (_head)
     {
-        node<T> *currNode = _head;
-        node<T> *temp = nullptr;
+        singly_node<T> *currNode = _head;
+        singly_node<T> *temp = nullptr;
         while (currNode)
         {
             temp = currNode->getNextNode();
@@ -19,12 +19,12 @@ void linkedList<T>::insert(T inData)
                 break;
             }
         }
-        currNode->setNextNode(new node<T>(inData));
+        currNode->setNextNode(new singly_node<T>(inData));
         ++_length;
     }
     else
     {
-        _head = new node<T>(inData);
+        _head = new singly_node<T>(inData);
         ++_length;
     }
 }
@@ -34,11 +34,11 @@ void linkedList<T>::reverse()
 {
     if (_head)
     {
-        node<T> *currNode = _head;
-        node<T> *nextNode = _head->getNextNode();
+        singly_node<T> *currNode = _head;
+        singly_node<T> *nextNode = _head->getNextNode();
         while (nextNode)
         {
-            node<T> *temp = nextNode->getNextNode();
+            singly_node<T> *temp = nextNode->getNextNode();
             nextNode->setNextNode(currNode);
             currNode = nextNode;
             nextNode = temp;
@@ -54,7 +54,7 @@ void linkedList<T>::print()
 {
     if (_head)
     {
-        node<T> *currNode = _head;
+        singly_node<T> *currNode = _head;
         while (currNode)
         {
             cout << currNode->getData();
@@ -80,7 +80,7 @@ void linkedList<T>::remove(unsigned nodeNum)
     {
         if (nodeNum == 1)
         {
-            node<T> *nextNode = _head->getNextNode();
+            singly_node<T> *nextNode = _head->getNextNode();
             delete _head;
             --_length;
             _head = nextNode;
@@ -88,12 +88,12 @@ void linkedList<T>::remove(unsigned nodeNum)
         else if (nodeNum > 1 && nodeNum <= _length)
         {
             unsigned i = 1;
-            node<T> *currNode = _head;
-            node<T> *nextNode = _head->getNextNode();
-            node<T> *prevNode = nullptr;
+            singly_node<T> *currNode = _head;
+            singly_node<T> *nextNode = _head->getNextNode();
+            singly_node<T> *prevNode = nullptr;
             while (nextNode)
             {
-                node<T> *temp = nextNode->getNextNode();
+                singly_node<T> *temp = nextNode->getNextNode();
                 prevNode = currNode;
                 currNode = nextNode;
                 nextNode = temp;
@@ -120,7 +120,7 @@ void linkedList<T>::findData(T inData, vector<unsigned> &index)
     if (_head)
     {
         unsigned i{1};
-        node<T> *currNode = _head;
+        singly_node<T> *currNode = _head;
         while (currNode)
         {
             if (currNode->getData() == inData)
@@ -168,8 +168,8 @@ void linkedList<T>::clear()
 {
     if( _head )
     {
-        node<T>* currNode = _head;
-        node<T>* nextNode = _head->getNextNode();
+        singly_node<T>* currNode = _head;
+        singly_node<T>* nextNode = _head->getNextNode();
         while(nextNode)
         {
             delete currNode;
@@ -185,7 +185,7 @@ void linkedList<T>::clear()
 }
 
 template <class T>
-node<T>* linkedList<T>::getHead()
+singly_node<T>* linkedList<T>::getHead()
 {
     return _head;
 }

@@ -1,7 +1,7 @@
 project( learn-cpp-data-structure-node-singlynode )
 
-set( src node.cpp )
+set( src singly_node.cpp )
 
-set( header node.hpp )
+set( header singly_node.hpp )
 
 add_library( singlynode SHARED ${header} ${src} )

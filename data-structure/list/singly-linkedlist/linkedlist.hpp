@@ -1,5 +1,5 @@
 #pragma once
-#include "node.cpp"
+#include "singly_node.cpp"
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -9,7 +9,7 @@ template <class T>
 class linkedList final
 {
 private:
-    node<T> *_head{nullptr};
+    singly_node<T> *_head{nullptr};
     unsigned _length{};
 
 public:
@@ -22,7 +22,7 @@ public:
     void reverse();
     void print();
     void clear();
-    node<T>* getHead();
+    singly_node<T>* getHead();
     ~linkedList();
 };
 
