@@ -4,30 +4,14 @@ project( learn-cpp-framework-poco )
 
 find_package(Poco REQUIRED Crypto)
 
-set(
-    src1
-    poco01.cpp
-    )
+set( src1 poco01.cpp )
 
-set(
-    src2
-    poco02.cpp
-    )
+set( src2 poco02.cpp )
 
-set(
-    header
-    )
+set( header )
 
-add_executable(
-    frameworkPoco1
-    ${src1}
-    ${header}
-    )
+add_executable( frameworkPoco1 ${src1} ${header} )
 
-add_executable(
-    frameworkPoco2
-    ${src2}
-    ${header}
-    )
+add_executable( frameworkPoco2 ${src2} ${header} )
 
 target_link_libraries( frameworkPoco1 PUBLIC Poco::Crypto)
