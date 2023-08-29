@@ -14,3 +14,8 @@ mkdir build
 cd build
 cmake .. ( OR ) cmake -S .. -G "MinGW Makefiles"
 make ( OR ) mingw32-make.exe
+
+-----
+
+https://www.msys2.org/
+a good tool for setting up dev-tools in Windows PCs.
