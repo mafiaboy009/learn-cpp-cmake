@@ -22,10 +22,14 @@ set( src1 boost01-date.cpp )
 
 set( src2 boost02-asio.cpp )
 
+set( src3 boost03-server.cpp )
+
 set( header )
 
 add_executable( frameworkBoost01Date ${src1} ${header} )
-add_executable( frameworkBoost02Server ${src2} ${header} )
+add_executable( frameworkBoost02Asio ${src2} ${header} )
+add_executable( frameworkBoost03Server ${src3} ${header} )
 
 target_link_libraries(frameworkBoost01Date PRIVATE Boost::date_time Boost::filesystem Boost::iostreams)
-target_link_libraries(frameworkBoost02Server PRIVATE Boost::boost Boost::thread Boost::system wsock32)
+target_link_libraries(frameworkBoost02Asio PRIVATE Boost::boost Boost::thread Boost::system wsock32)
+target_link_libraries(frameworkBoost03Server PRIVATE Boost::boost Boost::thread Boost::system wsock32 ws2_32)
