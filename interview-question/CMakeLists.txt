@@ -1,6 +1,7 @@
 project( learn-cpp-interview-question )
 
 add_subdirectory( bubble-sort )
+add_subdirectory( check-anagram )
 add_subdirectory( chocolate-wrapper-recycle )
 add_subdirectory( count-consecutive-characters )
 add_subdirectory( count-numbers-less-than-a-particular-number )
